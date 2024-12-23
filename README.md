@@ -79,7 +79,7 @@ Have ideas, suggestions, or encountered a bug? Open an issue or leave a review o
 ---
 
 ## 📜 Roadmap
-- **Future Updates**: 
-  - Remote backup monitoring (Discord/email alerts).
-  - Advanced restore options.
-  - Cross-server compatibility enhancements.
+- ### Future Enhancements
+- **Standalone Restore Feature**: A standalone executable to restore the server to the last known good version. This feature ensures seamless restoration even if the server environment is damaged or corrupted.
+- **Remote Backup Monitoring**: Integration with Discord and email notifications for backup statuses and errors.
+- **Profiling for Weekly Backups**: Tailored weekly backups based on server activity profiling.
