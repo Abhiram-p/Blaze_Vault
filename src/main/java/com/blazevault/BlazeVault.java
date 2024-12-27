@@ -38,3 +38,19 @@ public class BlazeVault implements ModInitializer {
         return 1;
     }
 }
+
+@Override
+public void onInitialize() {
+    System.out.println("BlazeVault mod initialized!");
+
+    // Register backup command
+    CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+        dispatcher.register(literal("backup")
+            .then(literal("start").executes(context -> {
+                BackupManager.createBackup();
+                context.getSource().sendFeedback(Text.literal("Backup started!"), false);
+                return 1;
+            }))
+        );
+    });
+}
