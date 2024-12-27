@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "com/blazevault/mixin/ServerBackupMixin": {
+      "shutdown": "Lnet/minecraft/server/MinecraftServer;method_3782()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/blazevault/mixin/ServerBackupMixin": {
+        "shutdown": "Lnet/minecraft/server/MinecraftServer;method_3782()V"
+      }
+    }
+  }
+}

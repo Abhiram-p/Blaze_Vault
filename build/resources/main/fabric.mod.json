@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "blazevault",
+	"version": "1.0.0",
+	"name": "Blaze Vault",
+	"description": "A Minecraft mod for automated backups and restores with advanced features.",
+	"authors": [
+	  "Bl423"
+	],
+	"contact": {
+	  "sources": "https://github.com/Bl423/BlazeVault"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+	  "main": [
+		"com.blazevault.BlazeVault"
+	  ],
+	  "client": []
+	},
+	"mixins": [
+	  "blazevault.mixins.json"
+	],
+	"depends": {
+	  "fabricloader": ">=0.14.0",
+	  "fabric": "*",
+	  "minecraft": ">=1.21"
+	}
+  }
+  
