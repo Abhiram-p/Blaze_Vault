@@ -85,3 +85,20 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) // Use the version you're targeting
+    }
+    withJavadocJar()
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs.add("--enable-preview")
+}
+
+tasks.withType(Test) {
+    jvmArgs("--enable-preview")
+}
